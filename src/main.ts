@@ -10,6 +10,8 @@ async function bootstrap() {
       whitelist: true,
       // With this setting, it forces an error if we pass unknown properties
       // forbidNonWhitelisted: true,
+      // This converts body into an instance of our DTO class
+      transform: true,
     }),
   );
   await app.listen(3000);
